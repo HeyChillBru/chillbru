@@ -24,6 +24,7 @@
             position: sticky;
             top: 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 100;
         }
         .navbar {
             display: flex;
@@ -59,6 +60,8 @@
             color: #2B2416;
             padding: 100px 2rem;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
         .hero h2 {
             font-size: 3.5rem;
@@ -83,6 +86,15 @@
             background-color: #F5E6D3;
             color: #2B2416;
             transform: scale(1.05);
+        }
+        .mascot {
+            position: absolute;
+            right: 6%;
+            bottom: 0;
+            height: 85%;
+            max-height: 320px;
+            width: auto;
+            pointer-events: none;
         }
         .contact {
             max-width: 1200px;
@@ -138,6 +150,7 @@
         <section id="home" class="hero">
             <h2>Welcome to Chill Bru</h2>
             <button class="cta-button">Coming Soon</button>
+            <img src="ChillBru_Mug.jpg" alt="Chill Bru Mascot" class="mascot">
         </section>
         <section id="contact" class="contact">
             <h2>Get in Touch</h2>
